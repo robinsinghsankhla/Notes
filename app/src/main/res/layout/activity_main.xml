@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/titleEditText"
+        android:padding="7dp"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Title:"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/contentEditText"
+        android:padding="7dp"
+        android:background="@drawable/edit_text"
+        android:inputType="textMultiLine"
+        android:minLines="7"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content:"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveNoteBtn"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Note"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Notes:"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="12dp">
+        <LinearLayout
+            android:id="@+id/containerLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
